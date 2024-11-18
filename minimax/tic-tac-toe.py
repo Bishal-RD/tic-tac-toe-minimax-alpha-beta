@@ -81,13 +81,18 @@ def play_game():
     print("You are 'X' and the AI is 'O'. Make your move by entering row and column numbers (0-2).")
 
     while True:
-        # Player's Turn
         print_board(board)
-        row, col = map(int, input("Enter your move (row space column): ").split())
-        if board[row][col] != "":
-            print("Invalid move. Try again.")
+        # Player's Turn
+        try:
+            row, col = map(int, input("Enter your move (row space column): ").split())
+            if board[row][col] != "":
+                print("Invalid move! Try again.")
+                continue
+            board[row][col] = "X"
+
+        except (ValueError, IndexError):
+            print("Invalid input! Enter row and column as two numbers between 0 and 2.")
             continue
-        board[row][col] = "X"
         if is_winner(board, "X"):
             print("You win!")
             break
