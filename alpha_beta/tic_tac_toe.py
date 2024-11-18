@@ -128,3 +128,4 @@ def play_game():
 
 if __name__ == "__main__":
     play_game()
+    print("Thank you for playing...")
