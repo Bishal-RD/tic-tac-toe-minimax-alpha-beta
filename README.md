@@ -24,16 +24,16 @@ But a forest doesn't waste energy on barren ground. That's where **Alpha-Beta Pr
 
 1.  **Clone the repository:** Bring this digital ecosystem to your local machine.
     ```bash
-    git clone https://github.com/your-username/tic-tac-toe-minimax-alpha-beta.git
+    git clone https://github.com/Bishal-RD/tic-tac-toe-minimax-alpha-beta.git
     cd tic-tac-toe-minimax-alpha-beta
     ```
-    *(Note: Replace `your-username` with the actual repository owner's username if known, otherwise this serves as a general example.)*
+    *(Note: If you have forked this repository, use your fork's URL instead.)*
 2.  **Navigate to your chosen arena:** Decide if you want to face the Minimax AI or the Alpha-Beta Pruning enhanced AI.
     *   For Minimax: `cd minimax`
     *   For Alpha-Beta: `cd alpha_beta`
 3.  **Run the game:** Execute the Python script to start the challenge.
     ```bash
-    python tic_tac_toe.py
+    python3 tic_tac_toe.py
     ```
     You'll see a welcome message: "You are 'X' and the AI is 'O'."
 4.  **Make your mark on the landscape (Your Turn):**
